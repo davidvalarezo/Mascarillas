@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "970684634282",
+    "firebase_url": "https://reconocimiento-facial-2ff83.firebaseio.com",
+    "project_id": "reconocimiento-facial-2ff83",
+    "storage_bucket": "reconocimiento-facial-2ff83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970684634282:android:d160d7c32ca01ff9a86cd3",
+        "android_client_info": {
+          "package_name": "es.upv.master.android.reconocimientofacial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970684634282-p75lnsc3aqduv8cgibhdmvv1s03e2qri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqtQ0fCTk8z5Zeg3CAqfvfqJKjJutnfxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970684634282-p75lnsc3aqduv8cgibhdmvv1s03e2qri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

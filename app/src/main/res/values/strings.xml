@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Reconocimiento Mascarilla</string>
+    <string name="low_storage_error">Las dependecias del detector no se pueden descargar debido a la falta de espacio en el dispositivo</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">El acceso a la cámara es necesario para la detección</string>
+    <string name="permission_extenal_storage">El acceso a almacenamiento es necesario para guardar tus fotos</string>
+    <string name="no_camera_permission">Esta aplicación no puede funcionar debido a las restricciones con los permisos.  La aplicación se cerrará.</string>
+    <string name="boton_arrancar">Inicio</string>
+    <string name="msgBienvenida">Gracias por colaborar con la UPV e Instituto de Investigación Sanitaria La Fe</string>
+    <string name="error_upload_photos">Error: Ha ocurrido un error inesperado al compartir las fotos. ¿Desea intentar otra vez?</string>
+    <string name="finished_process">Felicidades has completado todos los pasos. ¿Desea repetir otra vez?</string>
+</resources>

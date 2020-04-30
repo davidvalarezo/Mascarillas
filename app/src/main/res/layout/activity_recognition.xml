@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <es.upv.master.android.reconocimientofacial.camera.CameraSourcePreview
+        android:id="@+id/facePreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/btn_takePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <es.upv.master.android.reconocimientofacial.camera.GraphicOverlay
+            android:id="@+id/faceOverlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:foregroundGravity="center_vertical|center" />
+
+    </es.upv.master.android.reconocimientofacial.camera.CameraSourcePreview>
+
+    <Button
+        android:id="@+id/btn_takePhoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_photo_button"
+        android:onClick="takeImage"
+        android:text=""
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facePreview" />
+
+    <!--Button
+        android:id="@+id/btn_sharePhoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_share_photos"
+        android:onClick="sharePhoto"
+        android:text=""
+        android:visibility="invisible"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facePreview" /-->
+
+    <ImageView
+        android:id="@+id/imgCara"
+        android:layout_width="232dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="100dp"
+        android:alpha="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/facePreview"
+        app:srcCompat="@drawable/cara_f" />
+
+    <ImageView
+        android:id="@+id/imgPhotoP"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:onClick="verFoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPhotoF"
+        app:layout_constraintTop_toBottomOf="@+id/facePreview"
+        app:srcCompat="@drawable/cara_p"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imgPhotoF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:onClick="verFoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facePreview"
+        app:srcCompat="@drawable/cara_f" />
+
+    <Button
+        android:id="@+id/btn_girarCamara"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_rotate"
+        android:onClick="rotarCamara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facePreview" />
+
+    <Button
+        android:id="@+id/btn_flash"
+        android:layout_width="21dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_flash_off"
+        android:text=""
+        android:onClick="activarFlash"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_girarCamara"
+        app:layout_constraintTop_toTopOf="@+id/btn_girarCamara" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
